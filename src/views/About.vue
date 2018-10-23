@@ -1,7 +1,41 @@
+<!-- HTML Goes here -->
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-    <h2>This is DevLee testing real quick</h2>
-    <h3>Testing one more time, creating branch</h3>
+  <div>
+    <div class="title">
+      <h1>{{title}}</h1>
+    </div>
+    <div class="card">
+      <app-members></app-members>
+      <div>DevLee</div>
+      <div>MattL019</div>
+      <div>Rejam</div>
+      <div>Banhbaovy</div>
+      <div>Novajumper</div>
+    </div>
   </div>
+
 </template>
+
+<!-- JavaScript goes here -->
+<script>
+import Members from './components/Members.vue';
+export default {
+  components: {
+    'app-members': Members
+  },
+  data: function() {
+    return {
+      title: 'About Us'
+    }
+  }
+}
+</script>
+
+<!-- CSS goes here. 'scoped' attribute means the CSS will 
+be applied to this component only. -->
+<style scoped>
+h1 {
+  text-align: center;
+}
+
+</style>
