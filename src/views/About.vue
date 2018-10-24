@@ -18,11 +18,8 @@
 
 <!-- JavaScript goes here -->
 <script>
-import Members from './components/Members.vue';
+
 export default {
-  components: {
-    'app-members': Members
-  },
   data: function() {
     return {
       title: 'About Us'
